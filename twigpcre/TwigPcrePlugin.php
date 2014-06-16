@@ -3,7 +3,7 @@
  * @package   Twig Match
  * @author    Victor In.
  * @copyright Copyright 2014
- * @link      https://github.com/victor-in/Craft-TwigMatch
+ * @link      https://github.com/victor-in/Craft-TwigPCRE
  * @license   MIT
  */
 namespace Craft;
