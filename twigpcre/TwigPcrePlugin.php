@@ -1,6 +1,6 @@
 <?php
 /**
- * @package   Twig Match
+ * @package   Twig PCRE
  * @author    Victor In.
  * @copyright Copyright 2014
  * @link      https://github.com/victor-in/Craft-TwigPCRE
