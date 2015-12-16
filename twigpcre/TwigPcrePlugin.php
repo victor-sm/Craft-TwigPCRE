@@ -2,7 +2,7 @@
 /**
  * @package   Twig PCRE
  * @author    Victor In.
- * @copyright Copyright 2014
+ * @copyright Copyright 2016
  * @link      https://github.com/victor-in/Craft-TwigPCRE
  * @license   MIT
  */
@@ -10,27 +10,41 @@ namespace Craft;
 
 class TwigPcrePlugin extends BasePlugin
 {
-    function getName()
+    public function getName()
     {
         return Craft::t('Twig PCRE Filters');
     }
 
-    function getVersion()
+    public function getVersion()
     {
-        return '0.1';
+        return '0.3';
     }
+	
+	public function getSchemaVersion() {
+		return '0.1';
+	}
 
-    function getDeveloper()
+    public function getDeveloper()
     {
         return 'Victor In.';
     }
 
-    function getDeveloperUrl()
+    public function getDeveloperUrl()
     {
         return 'https://github.com/victor-in/';
     }
+	
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/victor-in/Craft-TwigPCRE';
+    }
+	
+	public function getReleaseFeedUrl()
+	{
+		return 'https://github.com/victor-in/Craft-TwigPCRE/blob/master/changelog.json';
+	}
 
-    function addTwigExtension()
+    public function addTwigExtension()
     {
         Craft::import('plugins.twigpcre.twigextensions.TwigPcreTwigExtension');
         return new TwigPcreTwigExtension();
