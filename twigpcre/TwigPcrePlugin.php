@@ -17,12 +17,12 @@ class TwigPcrePlugin extends BasePlugin
 
     public function getVersion()
     {
-        return '0.3';
+        return '0.3.1';
     }
-	
-	public function getSchemaVersion() {
-		return '0.1';
-	}
+    
+    public function getSchemaVersion() {
+    	return '0.1';
+    }
 
     public function getDeveloper()
     {
@@ -38,11 +38,11 @@ class TwigPcrePlugin extends BasePlugin
     {
         return 'https://github.com/victor-in/Craft-TwigPCRE';
     }
-	
-	public function getReleaseFeedUrl()
-	{
-		return 'https://github.com/victor-in/Craft-TwigPCRE/blob/master/changelog.json';
-	}
+    
+    public function getReleaseFeedUrl()
+    {
+        return 'https://raw.githubusercontent.com/victor-in/Craft-TwigPCRE/master/changelog.json';
+    }
 
     public function addTwigExtension()
     {
